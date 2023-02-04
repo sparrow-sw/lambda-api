@@ -1,0 +1,25 @@
+{
+  "name": "lambda-api",
+  "version": "1.0.0",
+  "description": "example express lambda api",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "start:local": "ENVIRONMENT=local nodemon src/server.js"
+  },
+  "author": "Aaron Kauffman",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "mocha": "^10.2.0",
+    "nodemon": "^2.0.20",
+    "nyc": "^15.1.0"
+  },
+  "imports": {
+    "#src/*": "./src/*",
+    "#mock/*": "./mock/*"
+  }
+}
